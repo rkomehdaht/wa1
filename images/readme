@@ -1,0 +1,96 @@
+LAB: Simple automatic deployment
+
+For first config and setup cron job: clone this repo and execute main.sh
+
+Index page before updating
+
+ 
+
+Index page after changing of title (Playtika LAB):
+  
+
+Cron log
+ 
+
+WEBHOOKS
+
+First, install Webhooks
+
+sudo apt-get install webhook
+
+Creating webhook.yaml with these content:
+
+- id: redeploy-webhook
+  execute-command: "/usr/bin/bash /home/komehdaht/wa1/webhook.sh"
+  command-working-directory: "/home/komehdaht/wa1"
+
+Redeploy script:
+
+#! /usr/bin/env bash
+
+cd /var/www/material-design-template
+
+echo "Pulling from Master" 
+
+git pull origin master && echo "Pulled successfully from master"
+
+echo "Restarting server..."
+
+sudo systemctl restart nginx && echo "Server restarted Successfully"
+
+Make script executable:
+
+chmod u+x webhook.sh
+
+Setting Github Webhooks:
+ 
+
+Don’t forget to open a port
+
+ 
+
+Run Webhook:
+
+/usr/bin/webhook -hooks webhook.yaml -verbose
+
+
+ 
+
+Websocket
+
+Test WS server on Node
+
+ 
+
+Run with:
+
+node server.js
+
+Nginx config
+
+ 
+
+Checking ws
+
+ 
+
+
+
+Git
+
+ 
+
+
+ 
+
+git rebase -i --rebase-merge
+
+ 
+
+ 
+
+
+
+
+
+
