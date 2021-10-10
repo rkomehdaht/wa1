@@ -10,11 +10,11 @@ Index page before updating
 
 Index page after changing of title (Playtika LAB):
   
-![alt text](https://github.com/rkomehdaht/wa1/blob/main/images/Picture%202.png?raw=true)
+![alt text](https://github.com/rkomehdaht/wa1/blob/main/images/Picture%202.png)
 
 Cron log
  
-![alt text](https://github.com/rkomehdaht/wa1/blob/main/images/Picture%203.png?raw=true)
+![alt text](https://github.com/rkomehdaht/wa1/blob/main/images/Picture%203.png)
 
 ____
 
@@ -58,11 +58,11 @@ chmod u+x webhook.sh
 ____
 Setting Github Webhooks:
  
-![alt text](https://github.com/rkomehdaht/wa1/blob/main/images/Picture%204.png?raw=true)
+![alt text](https://github.com/rkomehdaht/wa1/blob/main/images/Picture%204.png)
 
 Don’t forget to open a port:)
 
-![alt text](https://github.com/rkomehdaht/wa1/blob/main/images/Picture%205.png?raw=true)
+![alt text](https://github.com/rkomehdaht/wa1/blob/main/images/Picture%205.png)
 
 Run Webhook:
 
@@ -70,7 +70,7 @@ Run Webhook:
 /usr/bin/webhook -hooks webhook.yaml -verbose
 ```
 
-![alt text](https://github.com/rkomehdaht/wa1/blob/main/images/Picture%206.png?raw=true)
+![alt text](https://github.com/rkomehdaht/wa1/blob/main/images/Picture%206.png)
 
 ____
 
@@ -78,7 +78,7 @@ ____
 
 Test WS server on Node
 
-![alt text](https://github.com/rkomehdaht/wa1/blob/main/images/Picture%207.png?raw=true)
+![alt text](https://github.com/rkomehdaht/wa1/blob/main/images/Picture%207.png)
 
 Run with:
 
@@ -90,27 +90,27 @@ ____
 
 Nginx config
 
-![alt text](https://github.com/rkomehdaht/wa1/blob/main/images/Picture%208.png?raw=true)
+![alt text](https://github.com/rkomehdaht/wa1/blob/main/images/Picture%208.png)
 
 Checking ws
 
-![alt text](https://github.com/rkomehdaht/wa1/blob/main/images/Picture%209.png?raw=true)
+![alt text](https://github.com/rkomehdaht/wa1/blob/main/images/Picture%209.png)
 
 ____
 
 ##Git
 
-![alt text](https://github.com/rkomehdaht/wa1/blob/main/images/Picture%2010.png?raw=true)
+![alt text](https://github.com/rkomehdaht/wa1/blob/main/images/Picture%2010.png)
 
-![alt text](https://github.com/rkomehdaht/wa1/blob/main/images/Picture%2011.png?raw=true)
+![alt text](https://github.com/rkomehdaht/wa1/blob/main/images/Picture%2011.png)
 
 ```
 git rebase -i --rebase-merge
 ```
 
-![alt text](https://github.com/rkomehdaht/wa1/blob/main/images/Picture%2012.png?raw=true)
+![alt text](https://github.com/rkomehdaht/wa1/blob/main/images/Picture%2012.png)
 
-![alt text](https://github.com/rkomehdaht/wa1/blob/main/images/Picture%2013.png?raw=true)
+![alt text](https://github.com/rkomehdaht/wa1/blob/main/images/Picture%2013.png)
 
 
 
