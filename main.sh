@@ -21,30 +21,29 @@ sudo apt-get update
 sudo apt-get install -y git nginx
 
 #First setting up of Git
-git config --global user.name "${name}" 
-git config --global user.email "${email}"
+sudo git config --global user.name "${name}" 
+sudo git config --global user.email "${email}"
 
 #Starting web-server
 sudo systemctl start nginx
 
 #Cloning forked repository
-mkdir /var/www/material-design-template
-git clone https://github.com/${nick}/material-design-template /var/www/material-design-template
+sudo mkdir /var/www/material-design-template
+sudo git clone https://github.com/${nick}/material-design-template /var/www/material-design-template
 
 #Setting up configuration of web-server
 sudo rm /etc/nginx/sites-available/default
 echo "server {
     listen       80;
     root /var/www/material-design-template/www;
-    server_name  _;
-
-    location /  {
-     try_files $uri $uri/ =404;
-    }
 }" | sudo tee /etc/nginx/sites-available/default
 
+#Restarting web-server
+
+sudo systemctl restart nginx 
+
 #Setting up of regular pull from repo
-echo -e "Now execute 'crontab -e' and paste this:\n '*/1 * * * * su -s /bin/sh www-data -c 'cd /var/www/material-design-template && git pull'\nControl+C to exit"
+echo -e "Now execute 'crontab -e' and paste this:\n '*/1 * * * * cd /var/www/material-design-template && git pull origin master\nControl+C to exit"
 }
 
     else

@@ -2,7 +2,7 @@
 
 cd /var/www/material-design-template
 
-echo "Pulling from Master" 
+echo "Pulling from Main" 
 
 sudo git pull origin master && echo "Pulled successfully from master"
 
