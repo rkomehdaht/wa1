@@ -1,0 +1,3 @@
+- id: redeploy-webhook
+  execute-command: "/home/komehdaht/wa1/webhook.sh"
+  command-working-directory: "/home/komehdaht/wa1"
