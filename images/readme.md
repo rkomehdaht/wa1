@@ -6,7 +6,7 @@ For first config and setup cron job: clone this repo and execute main.sh
 
 Index page before updating
 
-![alt text](https://github.com/rkomehdaht/wa1/blob/main/images/Picture%201.png?raw=true)
+![alt text](https://github.com/rkomehdaht/wa1/blob/main/images/Picture%201.png)
 
 Index page after changing of title (Playtika LAB):
   
@@ -102,7 +102,7 @@ ____
 
 ![alt text](https://github.com/rkomehdaht/wa1/blob/main/images/Picture%2010.png?raw=true)
 
-![alt text]https://github.com/rkomehdaht/wa1/blob/main/images/Picture%2011.png?raw=true)
+![alt text](https://github.com/rkomehdaht/wa1/blob/main/images/Picture%2011.png?raw=true)
 
 ```
 git rebase -i --rebase-merge
